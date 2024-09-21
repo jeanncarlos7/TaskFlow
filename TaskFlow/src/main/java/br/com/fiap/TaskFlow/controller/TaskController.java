@@ -1,7 +1,7 @@
 package br.com.fiap.TaskFlow.controller;
 
-import com.taskflow.model.Task;
-import com.taskflow.service.TaskService;
+import br.com.fiap.TaskFlow.model.Task;
+import br.com.fiap.TaskFlow.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

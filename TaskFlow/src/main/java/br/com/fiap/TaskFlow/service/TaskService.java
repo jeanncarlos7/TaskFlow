@@ -1,7 +1,7 @@
 package br.com.fiap.TaskFlow.service;
 
-import com.taskflow.model.Task;
-import com.taskflow.repository.TaskRepository;
+import br.com.fiap.TaskFlow.model.Task;
+import br.com.fiap.TaskFlow.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -21,5 +21,4 @@ public class TaskService {
         return taskRepository.save(task);
     }
 
-    // Outros métodos (update, delete, etc.)
 }
