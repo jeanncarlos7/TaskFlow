@@ -7,6 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class TaskService {
 
@@ -17,8 +19,15 @@ public class TaskService {
         return taskRepository.findByTitleContaining(title, pageable);
     }
 
+    public Optional<Task> getTaskById(Long id) {
+        return taskRepository.findById(id);
+    }
+
     public Task saveTask(Task task) {
         return taskRepository.save(task);
     }
 
+    public void deleteTask(Long id) {
+        taskRepository.deleteById(id);
+    }
 }
